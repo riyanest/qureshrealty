@@ -21,6 +21,7 @@ export default function Home() {
   const ADVISOR_EMAIL = "reply2qureshhrealty@gmail.com";
   const ADVISOR_RERA = "A011332503667";
   const PROJECT_RERA = "PR1331012602464";
+  const ADVISOR_INSTAGRAM = "https://www.instagram.com/officialqureshhglobalrealty/";
 
   // Handlers
   const handleHeroSubmit = (e: React.FormEvent) => {
@@ -90,6 +91,14 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-3">
             <span>MahaRERA: <b className="text-gold-light">{PROJECT_RERA}</b></span>
             <span>Agent RERA: <b className="text-gold-light">{ADVISOR_RERA}</b></span>
+            <a
+              href={ADVISOR_INSTAGRAM}
+              target="_blank"
+              rel="noreferrer"
+              className="text-orange-400 hover:text-orange-300 font-semibold flex items-center gap-1"
+            >
+              📸 @officialqureshhglobalrealty
+            </a>
             <span className="bg-gold/15 border border-gold text-gold-light px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider">
               Zero Brokerage Advisory
             </span>
@@ -303,9 +312,9 @@ export default function Home() {
 
               <div className="flex items-center gap-3 pt-4 mt-5 border-t border-white/10 text-xs text-slate-300">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80"
+                  src="/sultana-qureshi.jpg"
                   alt="Sultana Qureshi"
-                  className="w-10 h-10 rounded-full border-2 border-gold-light object-cover flex-shrink-0"
+                  className="w-10 h-10 rounded-full border-2 border-gold-light object-cover object-top flex-shrink-0"
                 />
                 <div>
                   <b className="text-gold-light block">Sultana Qureshi • Founder &amp; Consultant</b>
@@ -415,9 +424,9 @@ export default function Home() {
           <div className="lg:col-span-5 text-center">
             <div className="relative inline-block max-w-[340px] w-full rounded-2xl overflow-hidden border-4 border-gold shadow-2xl bg-navy">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85"
-                alt="Sultana Qureshi - Founder & Property Consultant"
-                className="w-full h-[430px] object-cover"
+                src="/sultana-qureshi.jpg"
+                alt="Sultana Qureshi - Founder & Senior Property Consultant"
+                className="w-full h-[430px] object-cover object-top"
               />
               <div className="absolute bottom-4 left-4 right-4 bg-navy-deep/95 border border-gold p-3 rounded-lg text-white shadow-md text-left">
                 <h4 className="font-serif text-base text-gold-light font-bold">Sultana Qureshi</h4>
@@ -426,6 +435,21 @@ export default function Home() {
                   MahaRERA: {ADVISOR_RERA}
                 </div>
               </div>
+            </div>
+            <div className="mt-4 flex justify-center">
+              <a
+                href={ADVISOR_INSTAGRAM}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#f09433] via-[#dc2743] to-[#bc1888] text-white font-semibold text-xs px-5 py-2.5 rounded-full shadow-lg hover:opacity-95 transition-all transform hover:-translate-y-0.5"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" strokeWidth="2"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" strokeWidth="2"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" strokeWidth="2"></line>
+                </svg>
+                Follow @officialqureshhglobalrealty
+              </a>
             </div>
           </div>
 
@@ -515,6 +539,47 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Instagram & Social Media Reel Showcase */}
+        <div className="max-w-7xl mx-auto mt-12 bg-gradient-to-r from-navy-deep via-navy to-navy-deep border border-gold/30 rounded-2xl p-6 sm:p-8 flex flex-wrap items-center justify-between gap-6 text-white shadow-xl">
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="bg-gradient-to-r from-amber-500 via-rose-500 to-pink-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                Instagram Reels & Updates
+              </span>
+              <span className="text-gold-light text-xs font-semibold">@officialqureshhglobalrealty</span>
+            </div>
+            <h4 className="font-serif text-xl sm:text-2xl font-bold mb-2">
+              Watch Sunteck Belvedere Park Video Reels & Walkthroughs
+            </h4>
+            <p className="text-slate-300 text-xs sm:text-sm">
+              Follow Sultana Qureshi on Instagram for exclusive site walkthroughs, high-deck views, sample flat previews, and neighborhood insights.
+            </p>
+          </div>
+          <div className="flex items-center gap-3 flex-wrap">
+            <a
+              href={ADVISOR_INSTAGRAM}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#f09433] via-[#dc2743] to-[#bc1888] text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg hover:opacity-95 transition-all"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" strokeWidth="2"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" strokeWidth="2"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" strokeWidth="2"></line>
+              </svg>
+              Connect on Instagram
+            </a>
+            <a
+              href="https://youtube.com/@qureshhglobalrealty"
+              target="_blank"
+              rel="noreferrer"
+              className="border border-gold text-gold-light hover:bg-gold hover:text-navy-deep font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-full transition-colors"
+            >
+              Watch on YouTube
+            </a>
           </div>
         </div>
       </section>
